@@ -24,7 +24,7 @@
 - About: Website background, developer credits, and source citations.
 
 ## 6. JavaScript Integration
-Javascript will be used throughout the website to make it more interactive and engaging for viewers. On the Members page, once you open an individual's member's profile, there will be a slideshow of their pictures from every concept album. Meanwhile, on the Discography page, Javascript will be used to display songs/albums dynamically when users click on different categories. The Gallery page will use an image carousel script, which will be used for readers to scroll through smoothly. Lastly, Javascript will be used for small effects, such as animated buttons and a back-to-top button when the user reaches the bottom of the site.
+Javascript will be used throughout the website to make it more interactive and engaging for viewers. On the Members page, once you open an individual's member's profile, there will be a slideshow of their pictures from every concept album. Meanwhile, on the Discography page, Javascript will be used to display songs/albums dynamically when users click on different categories. The Showcase page will use an image carousel script, which will be used for readers to scroll through smoothly. Lastly, Javascript will be used for small effects, such as animated buttons and a back-to-top button when the user reaches the bottom of the site.
 
 
 ## 7. Wireframes / Mockups
