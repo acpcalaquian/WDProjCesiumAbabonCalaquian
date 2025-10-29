@@ -19,7 +19,7 @@
 ## 5. Website Outline
 - Home: Welcoming page with an overview of aespa and an introduction to the website.
 - Members: Detailed member profiles including photos, bios, and fun facts.
--Discography: Collection of albums and singles with a JS-powered music player.
+- Discography: Collection of albums and singles with a JS-powered music player.
 - Showcase: Features aespa’s performances, concept photos, and media highlights through a curated display or slideshow.
 - About: Website background, developer credits, and source citations.
 
