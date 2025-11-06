@@ -1,0 +1,53 @@
+html {
+    background: linear-gradient(rgb(255, 125, 231), rgb(255, 255, 255));
+    height: 1000px;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.navigation {
+    background-image: url('/assets/aespaverse_banner.png');
+    height: 285px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.navigation a {
+    float: right;
+    color: #b30d92;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.navigation a:hover {
+    color: #ff35b8;
+    transform: translateY(3px);
+}
+
+.navigation #logo {
+    width: 230px;
+    height: auto;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: linear-gradient(#ffffff, #ffffff);
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #d136a2;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#d136a2, #c375ff);
+  }
