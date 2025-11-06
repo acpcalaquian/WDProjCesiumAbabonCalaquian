@@ -9,7 +9,7 @@
 ---
 
 ## 3. Logo
-![Website Logo](https://media.discordapp.net/attachments/1404769643297636422/1432932351016435813/Untitled_Artwork_87.png?ex=6902d9bf&is=6901883f&hm=e6a18f3ac39edde5f980b2178a75607c18098c52a178478bdf261015d0138de1&=&format=webp&quality=lossless&width=1620&height=912)
+![Website Logo](/assets/website%20logo.png)
 
 ---
 
