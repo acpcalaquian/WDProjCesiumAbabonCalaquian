@@ -1,17 +1,21 @@
 html {
     background: linear-gradient(rgb(255, 125, 231), rgb(255, 255, 255));
-    height: 1000px;
 }
 
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
+    min-height: 100%; 
+    margin: 0;
 }
+
+/* navigation top panel thing */
 
 .navigation {
     background-image: url('/assets/aespaverse_banner.png');
     height: 285px;
     background-size: cover;
     overflow: hidden;
+    border-bottom: 2px solid #b30d92;
 }
 
 .navigation a {
@@ -35,22 +39,106 @@ body {
     margin-top: 60px;
 }
 
+/* scrollbar thing */
 
 ::-webkit-scrollbar {
     width: 13px;
     height: 10px;
-  }
+}
   
 ::-webkit-scrollbar-track {
     background: linear-gradient(#ffffff, #ffffff);
     border: 2px solid gray;
-  }
+}
   
 ::-webkit-scrollbar-thumb {
     background: #ffffff;
     border: 2px solid #ff35b8;
-  }
+}
   
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(#ff5bce, #ffffff);
-  }
+}
+
+/* footer */
+
+#footer {
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    margin-top: 5px;
+    background: linear-gradient(to right,rgb(255, 140, 219),rgb(191, 219, 255), rgb(234, 127, 255),rgb(255, 140, 219));
+    background-size: 400% 100%; 
+    border-top: 2px dashed #b6299e;
+    font-size: 1em;
+    color: #650261;
+    animation: color-shift 10s ease infinite; 
+}
+
+#footer a {
+    color: #b30d92;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #780953;
+}
+
+@keyframes color-shift {
+    0% { 
+      background-position: 0% 50%;
+    } 100% { 
+      background-position: 100% 50%;
+    }
+}
+
+/* slideshow */
+
+* {box-sizing: border-box;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+        
+        
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+        
+.dot {
+    height: 15px;
+    width: 15px;
+    margin-bottom: 20px;
+    background-color: #ffceec;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: 2px solid rgb(126, 26, 102);
+}
+        
+.active {
+    background-color: #cb579d;
+}
+        
+.ghost-in {
+    animation-name: ghostFadeScale;
+    animation-duration: 1.0s;
+    animation-timing-function: ease-in-out;
+}
+    
+@keyframes ghostFadeScale {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    } to {
+    opacity: 1;
+    transform: scale(1);
+    }
+}
+
+        
+@media only screen and (max-width: 300px) {
+   .text {font-size: 11px}
+}
