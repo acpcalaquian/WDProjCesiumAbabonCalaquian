@@ -30,24 +30,27 @@ body {
 }
 
 .navigation #logo {
-    width: 230px;
+    width: 300px;
     height: auto;
+    margin-top: 60px;
 }
 
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 13px;
     height: 10px;
   }
   
 ::-webkit-scrollbar-track {
     background: linear-gradient(#ffffff, #ffffff);
+    border: 2px solid gray;
   }
   
 ::-webkit-scrollbar-thumb {
-    background: #d136a2;
+    background: #ffffff;
+    border: 2px solid #ff35b8;
   }
   
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(#d136a2, #c375ff);
+    background: linear-gradient(#ff5bce, #ffffff);
   }
