@@ -45,8 +45,6 @@ body {
 
 /* scrollbar things */
 
-/* Scrollbar things (Updated for Pebble Look) */
-
 ::-webkit-scrollbar {
     width: 13px;
     height: 10px;
@@ -66,26 +64,38 @@ body {
     background: linear-gradient(#ff5bce, #ffffff);
 }
 
-.information-box::-webkit-scrollbar {
+.information-box-karina::-webkit-scrollbar, 
+.information-box-winter::-webkit-scrollbar,
+.information-box-giselle::-webkit-scrollbar,
+.information-box-ningning::-webkit-scrollbar {
     width: 10px;
     height: 2px;
 }
   
-.information-box::-webkit-scrollbar-track {
+.information-box-karina::-webkit-scrollbar-track, 
+.information-box-winter::-webkit-scrollbar-track,
+.information-box-giselle::-webkit-scrollbar-track,
+.information-box-ningning::-webkit-scrollbar-track {
     background: transparent;
     border: none;
 }
   
-.information-box::-webkit-scrollbar-thumb {
+.information-box-karina::-webkit-scrollbar-thumb, 
+.information-box-winter::-webkit-scrollbar-thumb,
+.information-box-giselle::-webkit-scrollbar-thumb,
+.information-box-ningning::-webkit-scrollbar-thumb {
     width: 4px;
     height: 4px;
-    background: rgb(184, 237, 255);
+    background: rgb(219, 219, 219);
     border-radius: 100px;
     border: none;
 }
   
-.information-box::-webkit-scrollbar-thumb:hover {
-    background: rgb(232, 249, 255);
+.information-box-karina::-webkit-scrollbar-thumb:hover, 
+.information-box-winter::-webkit-scrollbar-thumb:hover,
+.information-box-giselle::-webkit-scrollbar-thumb:hover,
+.information-box-ningning::-webkit-scrollbar-thumb:hover {
+    background: rgb(196, 196, 196);
 }
 
 /* top panel */
@@ -107,6 +117,54 @@ body {
     margin-right: 25px;
     float: right;
     color: #b30d92;
+}
+
+.panel #member_name_winter {
+    margin-top: 60px;
+    margin-right: 25px;
+    float: right;
+    color: #0baf0b;
+}
+
+.panel #member_name_giselle {
+    margin-top: 60px;
+    margin-right: 25px;
+    float: right;
+    color: #af0b0b;
+}
+
+.panel #member_name_ningning {
+    margin-top: 60px;
+    margin-right: 25px;
+    float: right;
+    color: #8b5a06;
+}
+
+#member_name_winter strong {
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(149, 11, 143), #a41edd); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+#member_name_giselle strong {
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(149, 11, 11), #dd1e1e); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+#member_name_ningning strong {
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(149, 103, 11), #695206); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 /* footer */
@@ -219,11 +277,9 @@ body {
 
 .karina {
     object-fit: cover;
-    filter: grayscale(1);
 }
 
 .karina:hover {
-    filter:grayscale(0);
 }
 
 .image {
@@ -234,30 +290,24 @@ body {
 
 
 .giselle {
-    filter: grayscale(1);
     object-fit: cover;
 }
 
 .giselle:hover {
-    filter:grayscale(0);
 }
 
 .ningning {
     object-fit: cover;
-    filter: grayscale(1);
 }
 
 .ningning:hover {
-    filter:grayscale(0);
 }
 
 .winter {
     object-fit: cover;
-    filter: grayscale(1);
 }
 
 .winter:hover {
-    filter:grayscale(0);
 }
 
 h1 strong {
@@ -282,11 +332,38 @@ h1 strong {
     padding: 20px;
 }
 
-.image-box {
+.image-box-karina {
     border: 2px solid rgb(255, 255, 255); 
     border-radius: 15px;
     padding: 10px; 
     background-color: rgb(154, 230, 255);
+    box-shadow: 0px 0px 10px rgba(142, 13, 129, 0.671);
+    display: inline-block;
+}
+
+.image-box-winter {
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 15px;
+    padding: 10px; 
+    background-color: rgb(202, 255, 202);
+    box-shadow: 0px 0px 10px rgba(142, 13, 129, 0.671);
+    display: inline-block;
+}
+
+.image-box-giselle {
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 15px;
+    padding: 10px; 
+    background-color: rgb(255, 158, 158);
+    box-shadow: 0px 0px 10px rgba(142, 13, 129, 0.671);
+    display: inline-block;
+}
+
+.image-box-ningning {
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 15px;
+    padding: 10px; 
+    background-color: rgb(255, 250, 158);
     box-shadow: 0px 0px 10px rgba(142, 13, 129, 0.671);
     display: inline-block;
 }
@@ -302,7 +379,7 @@ h1 strong {
     padding: 20px;
 }
 
-.information-box {
+.information-box-karina {
     font-size: 15.5px;
     border: 2px solid rgb(255, 255, 255); 
     border-radius: 15px;
@@ -314,16 +391,97 @@ h1 strong {
     box-shadow: 0px 0px 10px rgba(142, 13, 129, 0.485);
 }
 
-.information-box p strong {
+.information-box-karina p strong {
     color: rgb(40, 99, 218);
 }
 
-.information-box h2 {
+.information-box-karina h2 {
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 35px;
     transform: translateX(10px);
     background: -webkit-linear-gradient(rgb(98, 196, 228), rgb(20, 127, 163));
+    background-size: 200% auto; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.information-box-winter {
+    font-size: 15.5px;
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 15px;
+    padding: 45px;
+    background: linear-gradient(90deg, rgb(202, 255, 202), white);
+    height: 570px;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(142, 13, 129, 0.485);
+}
+
+.information-box-winter p strong {
+    color: rgb(58, 218, 40);
+}
+
+.information-box-winter h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    transform: translateX(10px);
+    background: -webkit-linear-gradient(rgb(115, 251, 113), rgb(61, 163, 20));
+    background-size: 200% auto; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.information-box-giselle {
+    font-size: 15.5px;
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 15px;
+    padding: 45px;
+    background: linear-gradient(90deg, rgb(255, 202, 202), white);
+    height: 570px;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(142, 13, 129, 0.485);
+}
+
+.information-box-giselle p strong {
+    color: rgb(218, 40, 40);
+}
+
+.information-box-giselle h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    transform: translateX(10px);
+    background: -webkit-linear-gradient(rgb(221, 20, 20), rgb(183, 11, 11));
+    background-size: 200% auto; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.information-box-ningning {
+    font-size: 15.5px;
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 15px;
+    padding: 45px;
+    background: linear-gradient(90deg, rgb(255, 250, 158), white);
+    height: 570px;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(142, 13, 129, 0.485);
+}
+
+.information-box-ningning p strong {
+    color: rgb(189, 127, 21);
+}
+
+.information-box-ningning h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    transform: translateX(10px);
+    background: -webkit-linear-gradient(rgb(221, 151, 20), rgb(183, 103, 11));
     background-size: 200% auto; 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
