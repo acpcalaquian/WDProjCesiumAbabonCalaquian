@@ -11,7 +11,7 @@ body {
 /* navigation top panel thing */
 
 .navigation {
-    background-image: url('/public/assets/aespaverse_banner.png');
+    background-image: url('public/assets/aespaverse_banner.png');
     height: 285px;
     background-size: cover;
     overflow: hidden;
