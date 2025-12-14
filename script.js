@@ -24,3 +24,43 @@ function showSlides() {
   
   setTimeout(showSlides, 2000);
 }
+
+/* SHOWCASE CAROUSEL */
+
+const showcaseImages = [
+  "/public/assets/showcase/showcase1.png",
+  "/public/assets/showcase/showcase2.png",
+  "/public/assets/showcase/showcase3.png"
+];
+
+let showcaseIndex = 0;
+
+function updateShowcase() {
+  const img = document.getElementById("showcaseImage");
+  if (img) {
+    img.src = showcaseImages[showcaseIndex];
+  }
+}
+
+function nextShowcase() {
+  showcaseIndex = (showcaseIndex + 1) % showcaseImages.length;
+  updateShowcase();
+}
+
+function prevShowcase() {
+  showcaseIndex = (showcaseIndex - 1 + showcaseImages.length) % showcaseImages.length;
+  updateShowcase();
+}
+
+/* BACK TO TOP BUTTON */
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+  if (topBtn) {
+    topBtn.style.display = window.scrollY > 300 ? "block" : "none";
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
