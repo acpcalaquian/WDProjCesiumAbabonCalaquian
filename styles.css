@@ -276,6 +276,10 @@ body {
 
 .karina {
     object-fit: cover;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: white;
 }
 
 .karina:hover {
@@ -290,6 +294,10 @@ body {
 
 .giselle {
     object-fit: cover;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: white;
 }
 
 .giselle:hover {
@@ -297,6 +305,10 @@ body {
 
 .ningning {
     object-fit: cover;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: white;
 }
 
 .ningning:hover {
@@ -304,6 +316,10 @@ body {
 
 .winter {
     object-fit: cover;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: white;
 }
 
 .winter:hover {
