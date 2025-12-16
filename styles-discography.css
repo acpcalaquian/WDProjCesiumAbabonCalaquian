@@ -1,0 +1,99 @@
+html {
+    background: url('public/assets/background.avif');
+    background-size: cover;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    min-height: 100%; 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* navigation top panel thing */
+
+.navigation {
+    background-size: cover;
+    overflow: hidden;
+    padding: 35px;
+}
+
+.navigation a {
+    float: right;
+    color: #af4a96;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.navigation a:hover {
+    color: #dcfffa;
+    transform: translateY(3px);
+}
+
+.navigation a:active {
+    color: #ff35b8;
+}
+
+.navigation #logo {
+    width: 300px;
+    height: auto;
+}
+
+/* scrollbar things */
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: linear-gradient(#ffffff, #ffffff);
+    border: 2px solid rgb(215, 215, 215);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #fff9e7;
+    border: 2px solid #eb8ecb;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom,rgb(255, 140, 219),rgb(191, 219, 255), rgb(255, 244, 225),rgb(255, 140, 219));
+    animation: color-shift 10s ease infinite; 
+    border: 2px solid white;
+}
+
+/* footer */
+
+#footer {
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    margin-top: 5px;
+    background: linear-gradient(to right,rgb(255, 140, 219),rgb(191, 219, 255), rgb(255, 244, 225),rgb(255, 140, 219));
+    background-size: 400% 100%; 
+    border-top: 2px dashed #b6299e;
+    font-size: 1em;
+    color: #650261;
+    animation: color-shift 10s ease infinite; 
+}
+
+#footer a {
+    color: #b30d92;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #780953;
+}
+
+@keyframes color-shift {
+    0% { 
+      background-position: 0% 50%;
+    } 100% { 
+      background-position: 100% 50%;
+    }
+}
