@@ -819,7 +819,7 @@ marquee {
     width: 360px;
     padding: 30px;
     border-radius: 20px;
-    background: linear-gradient(to right, rgb(253, 180, 225), rgb(167, 255, 254), rgb(221, 180, 250));
+    background: #ffffff;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     text-align: center;
 }

@@ -91,7 +91,13 @@ const quizData = [
         ]
     }
 ];
-
+// ===== Member Images =====
+const memberImages = {
+    Karina: "public/assets/karina-3.jpg", 
+    Winter: "public/assets/winter-3.jpg",
+    Giselle: "public/assets/giselle-3.jpg",
+    Ningning: "public/assets/ningning-3.jpg"
+};
 // ===== DOM Elements =====
 const questionEl = document.getElementById("question");
 const buttons = document.querySelectorAll(".buttons button");
@@ -125,7 +131,7 @@ buttons.forEach((btn, i) => {
         scores[selectedMember]++;
 
         // Highlight selected button
-        btn.style.background = "#8bc34a";
+        btn.style.background = "#cbf6f5";
         buttons.forEach(b => b.disabled = true);
 
         // Move to next question
@@ -148,10 +154,24 @@ function showResult() {
     questionEl.textContent = `You are most like ${winner}!`;
     buttons.forEach(btn => btn.style.display = "none");
     counterEl.textContent = "";
-}
+
+    // Get the quiz card container
+    const quizCard = document.querySelector(".quiz-card");
+    if (!quizCard) {
+        console.error("Quiz card not found!");
+        return;
+    }
+
+    const img = document.createElement("img");
+    img.src = memberImages[winner];
+    img.id = "result-img";
+    img.style.width = "200px";
+    img.style.borderRadius = "15px";
+    img.style.marginTop = "15px";
+    quizCard.appendChild(img);
+}   
 
 // ===== Initialize Quiz =====
 if (document.querySelector(".quiz-area")) {
     showQuestion(currentQuestion);
 }
-
