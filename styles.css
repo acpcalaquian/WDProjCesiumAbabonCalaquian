@@ -21,6 +21,7 @@ body {
 }
 
 .navigation a {
+    margin-top: 60px;
     float: right;
     color: #b30d92;
     text-align: center;
@@ -687,4 +688,97 @@ button {
 button:hover {
     transform: scale(1.05);
     transform: translateY(5px);
+}
+
+/* discography */
+
+.discography h1 em {
+    position: relative;
+    z-index: 1;
+    background: white;
+    padding: 30px 6% 27px;
+    margin: 0 auto 6%;
+}
+
+.container {
+    margin-top: 25px;
+    background-color: white;
+    padding: 60px 0;
+    text-align: left;
+    padding-left: 5%;
+    margin-bottom: 70px;
+}
+
+.title {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin: 0;
+    background: linear-gradient(to right, #ff35b8, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
+}
+
+.wrapper {
+    padding: 40px 5%;
+    min-height: 800px;
+}
+
+.label {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #da67c3;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.album-grid {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.album-card img {
+    border: 2px solid white;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.album-card img:hover {
+    transform: scale(1.02);
+}
+
+/* tooltip */
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: rgb(172, 251, 255);
+  border: 2px dotted white;
+  box-shadow: 0px 0px 5px #b3267b86;
+  color: #bc4f90;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
