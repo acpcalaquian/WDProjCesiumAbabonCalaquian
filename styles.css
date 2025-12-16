@@ -789,6 +789,11 @@ marquee img {
     width: 300px;
     height: auto;
     margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+marquee img:hover {
+    transform: scale(1.04);
 }
 
 marquee {
