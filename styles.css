@@ -1,5 +1,5 @@
 html {
-    background: linear-gradient(rgb(255, 125, 231), rgb(255, 255, 255));
+    background: linear-gradient(hwb(305 67% 3%), rgb(255, 255, 255));
 }
 
 body {
@@ -14,10 +14,10 @@ body {
 
 .navigation {
     background-image: url('public/assets/aespaverse_banner.png');
-    height: 285px;
+    height: 200px;
     background-size: cover;
     overflow: hidden;
-    border-bottom: 2px solid #b30d92;
+    border-bottom: 5px solid #ffffff;
 }
 
 .navigation a {
@@ -26,7 +26,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 21px;
     transition: transform 0.1s ease-in-out;
 }
 
@@ -42,7 +42,7 @@ body {
 .navigation #logo {
     width: 300px;
     height: auto;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 /* scrollbar things */
@@ -176,7 +176,7 @@ body {
     text-align: center;
     padding: 15px;
     margin-top: 5px;
-    background: linear-gradient(to right,rgb(255, 140, 219),rgb(191, 219, 255), rgb(234, 127, 255),rgb(255, 140, 219));
+   background: linear-gradient(to right, rgb(253, 180, 225), rgb(167, 255, 254), rgb(221, 180, 250), rgb(255, 140, 219));
     background-size: 400% 100%; 
     border-top: 2px dashed #b6299e;
     font-size: 1em;
