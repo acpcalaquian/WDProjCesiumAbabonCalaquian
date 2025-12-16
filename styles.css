@@ -805,3 +805,47 @@ marquee {
     border-bottom: 3px solid white;
     box-shadow: 0px 5px 10px rgba(188, 59, 184, 0.444);
 }
+
+
+/* QUIZ LAYOUT */
+.quiz-area {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-card {
+    width: 360px;
+    padding: 30px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.quiz-card h2 {
+    margin-bottom: 25px;
+}
+
+.buttons button {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: none;
+    background: #eaeaea;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.buttons button:hover {
+    background: #dcdcdc;
+}
+
+#counter {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
