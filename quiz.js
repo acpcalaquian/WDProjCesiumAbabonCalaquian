@@ -113,7 +113,7 @@ function showQuestion(index) {
     buttons.forEach((btn, i) => {
         btn.textContent = q.options[i].text;
         btn.disabled = false;
-        btn.style.background = "#eaeaea";
+        btn.style.background = "#e4e4e4ff";
     });
     counterEl.textContent = `Question ${index + 1} of ${quizData.length}`;
 }

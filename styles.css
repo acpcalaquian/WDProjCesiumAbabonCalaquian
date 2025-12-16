@@ -819,13 +819,19 @@ marquee {
     width: 360px;
     padding: 30px;
     border-radius: 20px;
-    background: white;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background: linear-gradient(to right, rgb(253, 180, 225), rgb(167, 255, 254), rgb(221, 180, 250));
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     text-align: center;
 }
 
 .quiz-card h2 {
     margin-bottom: 25px;
+}
+
+#question {
+    color: #b30d92; 
+    font-size: 20px; 
+    font-weight: bold; /
 }
 
 .buttons button {
@@ -834,18 +840,18 @@ marquee {
     margin: 10px 0;
     border-radius: 25px;
     border: none;
-    background: #eaeaea;
+    background: #ffffff;
     cursor: pointer;
     font-size: 15px;
 }
 
 .buttons button:hover {
-    background: #dcdcdc;
+    background: #ffffff;
 }
 
 #counter {
     margin-top: 15px;
     font-size: 14px;
-    color: #555;
+    color: #b30d92;
 }
 
