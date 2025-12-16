@@ -782,3 +782,20 @@ button:hover {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+/*marquee thingy*/
+
+marquee img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+marquee {
+    background: url('public/assets/background.avif');
+    background-size: cover;
+    padding: 10px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    box-shadow: 0px 5px 10px rgba(188, 59, 184, 0.444);
+}
