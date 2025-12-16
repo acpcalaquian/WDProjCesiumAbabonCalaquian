@@ -506,15 +506,15 @@ h1 strong {
     margin-bottom: 30px;
 }
 
-.floating-drumstick {
-    width: 2px;
+/*.floating-drumstick {
+    width: 30em;
     height: auto;
     position: fixed;
-    bottom: 80px;
-    right: 500px;
+    bottom: -100px;
+    right: 900px;
     transform: rotate(-15deg);
     z-index: 10; 
-}
+}*/
 
 .image {
     /* margin-left: 70px;*/
@@ -653,3 +653,26 @@ h1 strong {
     color: #ff35b8 !important;
 }
 
+/*buttons*/
+
+button {
+    display: block;
+    margin: 30px auto;
+    background: linear-gradient(to right, #e4efff, #f1b3ff);
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    padding: 12px 40px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 35px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(179, 13, 146, 0.3);
+    transition: transform 0.1s;
+    width: 500px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transform: translateY(5px);
+}
