@@ -320,7 +320,7 @@ h1 strong {
     border: 2px solid rgb(255, 255, 255); 
     border-radius: 15px;
     padding: 10px; 
-    background-color: rgb(154, 230, 255);
+    background-color: #9ae6ff;
     box-shadow: 0px 0px 10px rgba(142, 13, 129, 0.671);
     display: inline-block;
 }
@@ -329,7 +329,7 @@ h1 strong {
     border: 2px solid rgb(255, 255, 255); 
     border-radius: 15px;
     padding: 10px; 
-    background-color: rgb(202, 255, 202);
+    background-color: #6be26b;
     box-shadow: 0px 0px 10px rgba(142, 13, 129, 0.671);
     display: inline-block;
 }
@@ -338,7 +338,7 @@ h1 strong {
     border: 2px solid rgb(255, 255, 255); 
     border-radius: 15px;
     padding: 10px; 
-    background-color: rgb(255, 158, 158);
+    background-color: rgb(193, 61, 61);
     box-shadow: 0px 0px 10px rgba(142, 13, 129, 0.671);
     display: inline-block;
 }
@@ -457,7 +457,7 @@ h1 strong {
 }
 
 .information-box-ningning p strong {
-    color: rgb(189, 127, 21);
+    color: #bd7f15;
 }
 
 .information-box-ningning h2 {
@@ -1041,4 +1041,154 @@ marquee {
     transform: translateY(-10px);
     border-color: #ff35b8;
     box-shadow: 0 15px 40px rgba(255, 53, 184, 0.3);
+}
+
+.signup-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ff35b8;
+    margin-bottom: -20px;
+}
+
+.return-btn {
+    border: 2px solid #ff35b8;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #ff35b8;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #ff35b8;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+/* Bias Radio Buttons as Boxes */
+.bias-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.bias-item input { display: none; }
+
+.bias-item span {
+    display: block;
+    padding: 20px;
+    background: white;
+    border: 2px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bias-item input:checked + span {
+    border-color: #ff35b8;
+    background: #ffeef9;
+    color: #b30d92;
+    transform: scale(1.05);
+}
+
+#submit-form {
+    width: 500px;
+}
+
+/* Profile Specific Styles */
+.profile-page {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px;
+}
+
+.fan-title {
+    font-size: 1.5rem;
+    color: #4a0045;
+    margin: 0;
+}
+
+#welcome-name {
+    font-size: 3.5rem;
+    color: #ff35b8;
+    margin: 20px 0;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.profile-bio {
+    line-height: 1.6;
+    color: #4a0045;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.detail-box {
+    background: white;
+    border: 3px solid #b30d92;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 5px 5px 0px #ff35b8;
+}
+
+.detail-box h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #b30d92;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.detail-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4a0045;
+    margin-top: 10px;
+}
+
+.bias-background-active {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    min-height: 150px;
+    position: relative;
+    z-index: 1;
 }

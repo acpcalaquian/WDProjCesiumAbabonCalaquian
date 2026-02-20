@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Aespaverse</title>
+    <link rel="icon" type="png" href="public/assets/favicon.png">
+</head>
+
+<body>
+
+    <div class="noisewrap">
+        <div class="noisebg"></div>
+      </div>
+    
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+  
+    <!--navigation top panel-->
+
+    <div class="navigation">
+        <img id="logo" src="public/assets/website logo.png">
+        <a href="about.html">about</a>
+        <a href="quiz.html">my-world</a>
+        <a href="discography.html">discography</a>
+        <a href="members.html">members</a>
+        <a href="index.html">home</a>
+    </div>
+
+    <h1 class="page-title">Join My-World</h1>
+    
+            <form id="signup-form">
+                <div class="form-grid">
+                    <div class="form-left">
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter your name..." required>
+                        </div>
+    
+                        <div class="input-group">
+                            <label>Bias selection</label>
+                            <div class="bias-options">
+                                <label class="bias-item">
+                                    <input type="radio" name="bias" value="karina">
+                                    <span>Karina</span>
+                                </label>
+                                <label class="bias-item">
+                                    <input type="radio" name="bias" value="winter">
+                                    <span>Winter</span>
+                                </label>
+                                <label class="bias-item">
+                                    <input type="radio" name="bias" value="ningning">
+                                    <span>Ningning</span>
+                                </label>
+                                <label class="bias-item">
+                                    <input type="radio" name="bias" value="giselle">
+                                    <span>Giselle</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-right">
+                        <div class="input-group">
+                            <label for="fav-song">Favorite song (dropdown)</label>
+                            <select id="fav-song" required>
+                                <option value="" disabled selected>Select a track</option>
+                                <option value="supernova">Supernova</option>
+                                <option value="armageddon">Armageddon</option>
+                                <option value="drama">Drama</option>
+                                <option value="savage">Savage</option>
+                                <option value="next-level">Next Level</option>
+                                <option value="black-mamba">Black Mamba</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+    
+                <button type="submit" id="submit-form">Submit</button>
+                <button type="button" onclick="history.back()" style="margin-bottom: 30px;">Return</button>
+            </form>
+        </div>
+        <br>
+
+<!-- Footer -->
+<div id="footer">
+    <p>
+        © 2025 aespaVerse | Created by Allison Ababon and Amanda Calaquian |
+        <a href="https://www.aespa.com/">Visit Aespa Official Website</a>
+    </p>
+</div>
+
+<script src="signup.js"></script>
+</body>
+</html>
