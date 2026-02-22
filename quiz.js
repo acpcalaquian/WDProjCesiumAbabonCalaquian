@@ -175,3 +175,40 @@ function showResult() {
 if (document.querySelector(".quiz-area")) {
     showQuestion(currentQuestion);
 }
+
+function showResult() {
+    const maxScore = Math.max(...Object.values(scores));
+    const winner = Object.keys(scores).filter(key => scores[key] === maxScore)[0];
+
+    // Save to history
+    let history = JSON.parse(localStorage.getItem("quizHistory")) || [];
+    history.push({
+        member: winner,
+        date: new Date().toLocaleString()
+    });
+    localStorage.setItem("quizHistory", JSON.stringify(history));
+
+    // Show result on the same page
+    questionEl.textContent = `You are most like ${winner}!`;
+    buttons.forEach(btn => btn.style.display = "none");
+    counterEl.textContent = "";
+
+    const quizCard = document.querySelector(".quiz-card");
+
+    // Show image
+    const img = document.createElement("img");
+    img.src = memberImages[winner];
+    img.style.width = "200px";
+    img.style.borderRadius = "15px";
+    img.style.marginTop = "15px";
+    quizCard.appendChild(img);
+
+    // Button to view results page
+    const viewBtn = document.createElement("button");
+    viewBtn.textContent = "View All Results";
+    viewBtn.style.marginTop = "15px";
+    viewBtn.onclick = () => {
+        window.location.href = "results.html";
+    };
+    quizCard.appendChild(viewBtn);
+}

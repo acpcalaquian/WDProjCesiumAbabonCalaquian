@@ -1192,3 +1192,24 @@ input[type="text"], select {
     position: relative;
     z-index: 1;
 }
+
+.results-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* centers vertically */
+}
+
+#result-img {
+    width: 180px;
+    height: auto;
+    border-radius: 15px;
+    margin: 15px auto;
+    display: block; /* centers the image */
+}
+
+.retake-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 30px;
+}
