@@ -121,3 +121,32 @@ Link: [link](https://www.canva.com/design/DAG979IJwcg/1FOXI6MLTmiVOy2BL5KF_Q/edi
 * javascript
 * browser local storage
 
+
+## FINAL MODIFICATION PROPOSAL
+
+### Design and Narrative (Update and Delete of localStorage Data)
+
+For this final modification, the project will be enhanced by adding **Update and Delete functionalities** to the data stored in localStorage. This applies to both the quiz results (`quizHistory`) and the user profile data (`aespa_user`). 
+
+### Update Functionality
+
+The update feature will allow users to modify existing data instead of repeatedly creating new entries.
+
+For the quiz results, an **“Update Latest Result”** button will be added to the results page. When the user clicks this button, the system will retrieve the most recent result from the `quizHistory` array, update its value (such as the result or date), and save it back into localStorage. This prevents duplicate entries and keeps the data organized.
+
+For the user profile, an **Edit Profile** option will be implemented in the profile page. The stored data from `aespa_user` will be displayed in editable form fields. Once the user submits the updated form, the new data will overwrite the existing data in localStorage. This allows users to change their preferences anytime.
+
+### Delete Functionality
+
+The delete feature will allow users to remove stored data for better control and flexibility.
+
+Each quiz result displayed on the results page will include a **“Delete” button**. When clicked, the selected result will be removed from the `quizHistory` array and the updated data will be saved back into localStorage. This allows users to delete specific entries.
+
+A **“Clear All Results”** button will also be added to remove all quiz results at once. This will delete the entire `quizHistory` data from localStorage.
+
+For the user profile, a **“Delete Profile”** button will be added to the profile page. When clicked, the `aespa_user` data will be removed from localStorage, and the user will be redirected back to the sign-up page. This ensures users can fully remove their saved information.
+
+### Purpose and Usage
+
+The purpose of this update is to improve how to user interacts and manages their data within the website. It allows users to update and delete their stored data, making our website more dynamic and user-friendly.
+ All of this will be performed using JavaScript and browser localStorage, ensuring that data is updated and removed instantly without the need for a server.
