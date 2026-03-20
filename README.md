@@ -150,3 +150,7 @@ For the user profile, a **“Delete Profile”** button will be added to the pro
 
 The purpose of this update is to improve how to user interacts and manages their data within the website. It allows users to update and delete their stored data, making our website more dynamic and user-friendly.
  All of this will be performed using JavaScript and browser localStorage, ensuring that data is updated and removed instantly without the need for a server.
+
+ ## Wireframe Link: 
+
+[Link](https://www.canva.com/design/DAG3I834EAs/uXoh5mEm2Tz_ic8X1Uv_Vg/edit?utm_content=DAG3I834EAs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebuttone)
