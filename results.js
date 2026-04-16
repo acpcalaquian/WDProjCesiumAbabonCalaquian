@@ -1,4 +1,5 @@
-// Member Images
+
+// ===== Member Images =====
 const memberImages = {
     Karina: "public/assets/karina-3.jpg",
     Winter: "public/assets/winter-3.jpg",
@@ -6,32 +7,51 @@ const memberImages = {
     Ningning: "public/assets/ningning-3.jpg"
 };
 
-// Get history
-let history = JSON.parse(localStorage.getItem("quizHistory")) || [];
+// ===== LOAD RESULTS =====
+function loadResults() {
+    const history = JSON.parse(localStorage.getItem("quizHistory")) || [];
 
-const latestText = document.getElementById("latest-result");
-const imgEl = document.getElementById("result-img");
-const historyList = document.getElementById("history-list");
+    const latestResultEl = document.getElementById("latest-result");
+    const resultImg = document.getElementById("result-img");
+    const historyList = document.getElementById("history-list");
 
-if (history.length > 0) {
+    if (history.length === 0) {
+        latestResultEl.textContent = "No results yet.";
+        return;
+    }
+
     const latest = history[history.length - 1];
 
-    // Show latest result
-    latestText.textContent = `You are most like ${latest.member}!`;
-    imgEl.src = memberImages[latest.member];
+    latestResultEl.textContent = `Latest: You are most like ${latest.member}!`;
+    resultImg.src = memberImages[latest.member];
 
-    // Show past results
+    historyList.innerHTML = "";
+
     history.slice().reverse().forEach(item => {
         const li = document.createElement("li");
         li.textContent = `${item.member} — ${item.date}`;
         historyList.appendChild(li);
     });
-} else {
-    latestText.textContent = "No quiz results yet.";
-    imgEl.style.display = "none";
 }
 
-// Retake button
-function retakeQuiz() {
-    window.location.href = "quiz.html";
-}
+// ===== UPDATE BUTTON =====
+document.getElementById("update-latest-btn").onclick = () => {
+    let history = JSON.parse(localStorage.getItem("quizHistory")) || [];
+
+    if (history.length > 0) {
+        const latest = history[history.length - 1];
+
+        history[history.length - 1] = {
+            member: latest.member,
+            date: new Date().toLocaleString()
+        };
+
+        localStorage.setItem("quizHistory", JSON.stringify(history));
+
+        alert("Latest result updated!");
+        loadResults();
+    }
+};
+
+// ===== INIT =====
+loadResults();

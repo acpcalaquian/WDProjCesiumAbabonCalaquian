@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile | Aespaverse</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="png" href="public/assets/favicon.png">
+</head>
+
+<body>
+
+<div class="noisewrap">
+    <div class="noisebg"></div>
+</div>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+
+<!-- NAV -->
+<div class="navigation">
+    <img id="logo" src="public/assets/website logo.png">
+    <a href="about.html">about</a>
+    <a href="quiz.html">my-world</a>
+    <a href="discography.html">discography</a>
+    <a href="members.html">members</a>
+    <a href="index.html">home</a>
+</div>
+
+<h1 class="page-title">Edit Profile</h1>
+
+<form id="edit-profile-form">
+
+    <div class="form-grid">
+
+        <!-- LEFT SIDE -->
+        <div class="form-left">
+
+            <div class="input-group">
+                <label for="edit-name">Name</label>
+                <input type="text" id="edit-name" placeholder="Enter your name...">
+            </div>
+
+            <div class="input-group">
+                <label for="edit-bias">Bias selection</label>
+
+                <div class="bias-options">
+                    <label class="bias-item">
+                        <input type="radio" name="bias" value="karina">
+                        <span>Karina</span>
+                    </label>
+
+                    <label class="bias-item">
+                        <input type="radio" name="bias" value="winter">
+                        <span>Winter</span>
+                    </label>
+
+                    <label class="bias-item">
+                        <input type="radio" name="bias" value="ningning">
+                        <span>Ningning</span>
+                    </label>
+
+                    <label class="bias-item">
+                        <input type="radio" name="bias" value="giselle">
+                        <span>Giselle</span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="form-right">
+
+            <div class="input-group">
+                <label for="edit-song">Favorite song</label>
+
+                <select id="edit-song">
+                    <option value="Supernova">Supernova</option>
+                    <option value="Armageddon">Armageddon</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Savage">Savage</option>
+                    <option value="Next Level">Next Level</option>
+                    <option value="Black Mamba">Black Mamba</option>
+                </select>
+            </div>
+
+        </div>
+
+    </div>
+
+    <button type="button" id="save-btn">Save Changes</button>
+    <button type="button" onclick="history.back()">Return</button>
+
+</form>
+
+<div id="footer">
+    <p>
+        © 2025 aespaVerse | Created by Allison Ababon and Amanda Calaquian |
+        <a href="https://www.aespa.com/">Visit Aespa Official Website</a>
+    </p>
+</div>
+
+<script src="editprofile.js"></script>
+
+</body>
+</html>
+
