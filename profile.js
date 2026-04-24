@@ -80,3 +80,13 @@ document.getElementById("save-profile-btn").onclick = () => {
 function goToEdit() {
     window.location.href = "editprofile.html";
 }
+
+// ===== DELETE PROFILE =====
+function deleteProfile() {
+    const confirmDelete = confirm("Are you sure you want to delete your profile? This cannot be undone.");
+    if (confirmDelete) {
+        localStorage.removeItem("aespa_user");
+        alert("Profile deleted. Redirecting to home...");
+        window.location.href = "index.html"; 
+    }
+}
